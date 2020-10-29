@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;net45</TargetFrameworks>
+    <PackageId>ATN.Utils.Collection</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>jkCXf9X4</Authors>
+    <Company>ATN</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+     
+  </PropertyGroup>
+
+ <ItemGroup>
+
+    <None Include="LICENSE" Pack="true" PackagePath="" />
+
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="Xunit" Version="2.2">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+</ItemGroup>
+
+</Project>

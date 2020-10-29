@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 
 
-namespace ATN.WinApi
+namespace ATN.Utils.WinAutomation
 {
 	/// <summary>
 	/// Description of mouse.

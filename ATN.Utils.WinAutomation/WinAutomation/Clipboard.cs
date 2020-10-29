@@ -2,7 +2,7 @@
 using System.Threading;
 
 
-namespace ATN.WinApi
+namespace ATN.Utils.WinAutomation
 {
 	/// <summary>
 	/// Description of Clipboaerd.

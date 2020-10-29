@@ -13,7 +13,7 @@ public struct LASTINPUTINFO
     public uint dwTime;
 }
 
-namespace ATN.WinApi
+namespace ATN.Utils.WinAutomation
 {
     public static class Window
     {
@@ -214,7 +214,7 @@ namespace ATN.WinApi
 
             for (int i = 0; i < ticks; i++)
             {
-                var windows = WinApi.Window.FindWindows();
+                var windows = WinAutomation.Window.FindWindows();
 
                 var windows_list = windows.Where(x => func(x)).ToList();
 
@@ -229,12 +229,12 @@ namespace ATN.WinApi
 
         public static IntPtr FindWindowFromCaptation(string captation, int timeout = 2000)
         {
-            return FindWindowWhere(x => WinApi.Window.GetCaptionOfWindow(x) == captation, timeout);
+            return FindWindowWhere(x => WinAutomation.Window.GetCaptionOfWindow(x) == captation, timeout);
         }
 
         public static IntPtr FindWindowFromCaptationRegex(string pattern, int timeout = 2000)
         {
-            return FindWindowWhere(x => System.Text.RegularExpressions.Regex.IsMatch(WinApi.Window.GetCaptionOfWindow(x), pattern), timeout);
+            return FindWindowWhere(x => System.Text.RegularExpressions.Regex.IsMatch(WinAutomation.Window.GetCaptionOfWindow(x), pattern), timeout);
         }
 
         public static bool WaitForWindow(IntPtr wh, int timeout = 20000)
@@ -245,7 +245,7 @@ namespace ATN.WinApi
             for (int i = 0; i < ticks; i++)
             {
                 bool found = false;
-                foreach (var window in WinApi.Window.FindWindows())
+                foreach (var window in WinAutomation.Window.FindWindows())
                 {
                     if (window == wh)
                     {

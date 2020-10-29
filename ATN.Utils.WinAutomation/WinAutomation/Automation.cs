@@ -1,11 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: erxzr5
- * Date: 2018-01-19
- * Time: 14:36
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+﻿
 using System;
 using System.Windows.Forms;
 //using System.Drawing;
@@ -13,7 +6,7 @@ using System.Diagnostics;
 using System.Windows.Automation;
 
 
-namespace ATN.WinApi
+namespace ATN.Utils.WinAutomation
 {
 	/// <summary>
 	/// Description of automation.
@@ -23,11 +16,15 @@ namespace ATN.WinApi
 					
 		public static void AutomationElementToDebug()
 		{
-			AutomationElement temp = AutomationElement.FromPoint(new System.Windows.Point(ATN.WinApi.Mouse.GetCursorPosition().x, Mouse.GetCursorPosition().y));
-			if (temp != null) {
-				Debug.WriteLine("Name: {0}", temp.GetCurrentPropertyValue(AutomationElement.NameProperty));
-				Debug.WriteLine("Value: {0}", temp.GetCurrentPropertyValue(ValuePattern.ValueProperty));
-			}
+			throw new NotImplementedException();
+
+
+
+			// AutomationElement temp = AutomationElement.FromPoint(new System.Windows.Point(ATN.WinApi.Mouse.GetCursorPosition().x, Mouse.GetCursorPosition().y));
+			// if (temp != null) {
+			// 	Debug.WriteLine("Name: {0}", temp.GetCurrentPropertyValue(AutomationElement.NameProperty));
+			// 	Debug.WriteLine("Value: {0}", temp.GetCurrentPropertyValue(ValuePattern.ValueProperty));
+			// }
 		}
 		
 		

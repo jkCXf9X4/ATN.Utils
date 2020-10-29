@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATN.Utils.CustomCollection.Que
+namespace ATN.Utils.Collection.Que
 {
     public interface IQueue<T>
     {

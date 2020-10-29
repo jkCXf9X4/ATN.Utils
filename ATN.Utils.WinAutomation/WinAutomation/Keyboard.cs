@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Collections.ObjectModel;
 
-namespace ATN.WinApi
+namespace ATN.Utils.WinAutomation
 {
 	/// <summary>
 	/// Description of keyboard.
@@ -201,7 +201,7 @@ namespace ATN.WinApi
 				_globalKeyboardHook.KeyboardPressed += OnKey;
 			}
 			
-			private void OnKey(object sender, ATN.WinApi.Keyboard.GlobalKeyboardHookEventArgs e)
+			private void OnKey(object sender, ATN.Utils.WinAutomation.Keyboard.GlobalKeyboardHookEventArgs e)
 			{
 				Debug.WriteLine(e.KeyboardData.VirtualCode);
 				

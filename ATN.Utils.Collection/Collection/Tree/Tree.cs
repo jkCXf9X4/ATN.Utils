@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATN.Utils.CustomCollection.Tree
+namespace ATN.Utils.Collection.Tree
 {
     public class Node<T> : IEquatable<Node<T>>
     {

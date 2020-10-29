@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;net45</TargetFrameworks>
     <PackageId>ATN.Utils.WinAutomation</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>jkCXf9X4</Authors>
     <Company>ATN</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -14,6 +14,30 @@
  <ItemGroup>
 
     <None Include="LICENSE" Pack="true" PackagePath=""/>
+
+
+    <Reference Include="UIAutomationClient">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationClient.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+
+    <Reference Include="UIAutomationProvider">
+    <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationProvider.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UIAutomationTypes">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationTypes.dll</HintPath>
+    </Reference>
+
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Windows.Forms.dll</HintPath>
+    </Reference>
+<!--  
+     <Reference Include="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+-->
+    <Reference Include="WindowsBase">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\WindowsBase.dll</HintPath>
+    </Reference>
 
     <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.2.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
